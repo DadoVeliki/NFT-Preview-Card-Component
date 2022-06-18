@@ -1,0 +1,134 @@
+/*DESIGN
+*/
+*{
+    font-family: 'Outfit', sans-serif;
+}
+body{
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    min-height: 98vh;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width:25%;
+    height: 70vh;
+    background-color:hsl(216, 50%, 16%) ;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.glavna{
+    height: 55%;
+    border-radius: 8%;
+    padding: 6%;
+}
+.naslov{
+    padding-left:6%;
+    color:hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 24px;
+}
+.para{
+    padding-left: 6%;
+    padding-right: 6%;
+}
+p{
+    color:hsl(215, 51%, 70%);
+    font-size: 18px;
+}
+.cont2,.cont3{
+    display: flex;
+    flex-direction: row;
+    
+}
+.cont2{
+    color:hsl(178, 100%, 50%);
+    justify-content: flex-start;
+    font-weight: 600;
+}
+.cont3{
+    justify-content: flex-end;
+    color:hsl(215, 51%, 70%);
+    font-weight: 400;
+    
+}
+.container4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:88%;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+.dole{
+    margin-left: 6%;
+    color:hsl(215, 51%, 70%);
+    padding-left: 6%;
+    width:80%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+}
+span{
+    color:hsl(0, 0%, 100%);
+    margin-left: 5px;
+} 
+.container4 img{
+    padding-right: 5px;
+}
+hr{   
+    width: 88%;
+    font-weight: 300;
+    margin-top:5%;
+}
+.dole img{
+    transform: scale(0.5);
+    border:3px white solid;
+    border-radius: 50%;
+    margin-left:-40px;
+}
+.dole2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 6%;
+}
+/*ACTIVE STATES 
+*/
+.naslov:hover,span:hover{
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 4%;
+    bottom: 0;
+    left: 6%;
+    right: 0;
+    height: 55%;
+    width: 88%;
+    opacity: 0;
+    border-radius: 3%;
+    
+    background-color: hsl(178, 100%, 50%);
+}
+.overlay img{
+    transform: scale(1.2);
+    opacity: 1;
+}
+.container:hover .overlay{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+/*RESPONSIVE
+*/
+@media screen and (max-width:600px){
+    .container{
+        width:90%;
+    }
+}
